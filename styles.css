@@ -1,0 +1,54 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.page {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-1 {
+    background: #1e90ff;
+    color: white;
+}
+
+.page-2 {
+    background: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    max-width: 600px;
+}
+
+a {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background: #555;
+}
