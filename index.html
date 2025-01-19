@@ -4,29 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo" class="logo-image">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>   
+    </nav>
+
     <!-- First Page -->
     <div class="page page-1">
-        <div>
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I'm Atharv Gaikwad, a web developer passionate about creating amazing digital experiences. Scroll down to learn more about me!</p>
+        <div class="content">
+            <img src="images/1.png" alt="Portfolio Image" class="center-image">
+            <a href="designer.html" class="designer-link" data-target="designer.html">Designer</a>
+            <a href="programmer.html" class="programmer-link" data-target="programmer.html">Programmer</a>
         </div>
-    </div>
+    </div>          
+   
+   <!-- About Section -->
+<div id="about" class="page page-2">
 
-    <!-- Second Page -->
-    <div class="page page-2">
-        <div>
-            <h1>About Me</h1>
-            <p>
-                I'm a developer with expertise in web development, specializing in creating responsive and user-friendly websites. 
-                Feel free to reach out and connect!
-            </p>
-            <a href="#contact" id="contact-button">Contact Me</a>
-        </div>
-    </div>
+    <form id="contactForm" method="POST" action="/submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+    </form>
+    <script src="server.js"></script>
+      
+</div>
 
+    
     <script src="script.js"></script>
 </body>
 </html>

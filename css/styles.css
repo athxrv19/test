@@ -1,0 +1,328 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #020202;
+    color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+/* Logo on the Left */
+.logo {
+    flex: 1; /* Space for the logo on the left */
+}
+
+.logo-image {
+    height: 50;
+    width: auto;
+}
+
+/* Navigation Links ("Details") on the Right */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex: 2; /* Takes space to align links on the right */
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+}
+
+/* Page Sections */
+.page {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Adjust for navbar */
+}
+
+.page-1 {
+    background: rgb(12, 12, 12);
+    position: relative;
+}
+
+/* Image and Links in First Page */
+.center-image {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.designer-link,
+.programmer-link {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1e90ff;
+    transition: transform 0.3s ease;
+}
+
+.designer-link {
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.programmer-link {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.designer-link:hover,
+.programmer-link:hover {
+    transform: scale(1.1);
+}
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body.blur-transition {
+    filter: blur(10px);
+    transition: filter 0.5s ease-in-out;
+}
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #020202;
+    color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo on the Left */
+.logo {
+    flex: 1; /* Space for the logo on the left */
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+}
+
+/* Navigation Links ("Details") on the Right */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex: 2; /* Takes space to align links on the right */
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+}
+
+/* Page Sections */
+.page {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Adjust for navbar */
+}
+
+.page-1 {
+    background: white;
+    position: relative;
+}
+
+.page-2 {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Image and Links in First Page */
+.center-image {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.designer-link,
+.programmer-link {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #030303;
+    transition: transform 0.3s ease;
+}
+
+.designer-link {
+    top: 60%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.programmer-link {
+    top: 40%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.designer-link:hover,
+.programmer-link:hover {
+    transform: scale(1.1);
+}
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    height: 200vh; /* Adjust for scrolling */
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center-image {
+    width: 300px;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.designer-page-1 {
+    background: white;
+}
+
+.designer-page-2 {
+    background: #f4f4f4;
+}
+
+.programmer-page-1 {
+    background: white;
+}
+
+.programmer-page-2 {
+    background: #e0e0e0;
+}
+
+/* Fade Transition */
+.page[data-active="true"] .center-image {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page[data-active="false"] .center-image {
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+}
+
+.send-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #007acc;
+}
