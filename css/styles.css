@@ -1,122 +1,4 @@
-/* General Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-/* Navigation Bar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #020202;
-    color: white;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-}
-
-/* Logo on the Left */
-.logo {
-    flex: 1; /* Space for the logo on the left */
-}
-
-.logo-image {
-    height: 50;
-    width: auto;
-}
-
-/* Navigation Links ("Details") on the Right */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    flex: 2; /* Takes space to align links on the right */
-    justify-content: flex-end;
-}
-
-.nav-links a {
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #1e90ff;
-}
-
-/* Page Sections */
-.page {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 60px; /* Adjust for navbar */
-}
-
-.page-1 {
-    background: rgb(12, 12, 12);
-    position: relative;
-}
-
-/* Image and Links in First Page */
-.center-image {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.designer-link,
-.programmer-link {
-    position: absolute;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #1e90ff;
-    transition: transform 0.3s ease;
-}
-
-.designer-link {
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-}
-
-.programmer-link {
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-}
-
-.designer-link:hover,
-.programmer-link:hover {
-    transform: scale(1.1);
-}
-/* General Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
 body.blur-transition {
     filter: blur(10px);
     transition: filter 0.5s ease-in-out;
@@ -128,7 +10,7 @@ body.blur-transition {
     width: 100%;
     background: #020202;
     color: white;
-    z-index: 10;
+    z-index: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,7 +23,7 @@ body.blur-transition {
 }
 
 .logo-image {
-    height: 60px;
+    height: 50px;
     width: auto;
 }
 
@@ -149,13 +31,13 @@ body.blur-transition {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
-    flex: 2; /* Takes space to align links on the right */
+    gap: 30px;
+    flex: 10; /* Takes space to align links on the right */
     justify-content: flex-end;
 }
 
 .nav-links a {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -173,7 +55,7 @@ body.blur-transition {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 60px; /* Adjust for navbar */
+    padding-top: 50px; /* Adjust for navbar */
 }
 
 .page-1 {
@@ -186,19 +68,11 @@ body.blur-transition {
     color: #333;
 }
 
-/* Image and Links in First Page */
-.center-image {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 .designer-link,
 .programmer-link {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: cursive;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-decoration: none;
     color: #030303;
@@ -219,7 +93,7 @@ body.blur-transition {
 
 .designer-link:hover,
 .programmer-link:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 /* General Styling */
 * {
@@ -228,25 +102,8 @@ body.blur-transition {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    margin: 0;
-    height: 200vh; /* Adjust for scrolling */
-}
-
-.page {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .center-image {
-    width: 300px;
+    width: 392px;
     height: auto;
     opacity: 1;
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -393,4 +250,20 @@ button:hover {
     border: 1px dashed #ccc;
     color: #666;
     font-style: italic;
+}
+html {
+    scroll-behavior: smooth; /* Ensure smooth scrolling for modern browsers */
+}
+
+.page {
+    height: 100vh; /* Set each page to take the full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#second-page {
+    background-color: #f8f9fa;
+    padding: 2rem;
 }
